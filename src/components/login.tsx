@@ -57,7 +57,7 @@ export default function Login() {
             </button>
             <div className="text-center text-slate-950 text-lg flex flex-col lg:flex-row justify-between w-full">
               Não tem uma conta?
-              <span className="font-bold text-black text-lg">Cadastre-se gratuitamente</span>
+              <Link href="/#cadastrar" className="font-bold text-black text-lg">Cadastre-se gratuitamente</Link>
             </div>
           </div>
         </div>
