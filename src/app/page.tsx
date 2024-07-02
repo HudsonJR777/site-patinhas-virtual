@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex lg:hidden flex-col gap-4">
             <div className="flex items-center justify-center flex-col py-8 ">
               <h1 className={h1Style}>Sobre Nós</h1>
               <p className="font-normal xl2:font-medium xl4:font-semibold xl4:text-[20px]">
