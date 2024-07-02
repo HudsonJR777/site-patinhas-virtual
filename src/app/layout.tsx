@@ -7,8 +7,12 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+
   title: "Patinhas Virtual",
   description: "Ong patinhas virtual",
+  openGraph: {
+    images: ["https://i.imgur.com/Vun3wka.png"]
+  }
 };
 
 export default function RootLayout({
