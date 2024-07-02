@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Cel from "../assets/celular.png";
 import ApStore from "../assets/Ativo 1APPLE STORE.svg";
-import Google from "../assets/Ativo 3google play.svg";
+import Google from "../assets/googlePlay.svg";
 
 export default function Accessibility() {
     return (
