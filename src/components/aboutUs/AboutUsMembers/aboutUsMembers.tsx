@@ -2,6 +2,9 @@
 import Image from "next/image";
 import logo from "../assets/logo.svg";
 import { useState } from "react";
+import { Instagram } from "lucide-react";
+import Link from "next/link";
+
 
 interface IAboutUsMembersProps {
   urlImage: string;
@@ -11,6 +14,8 @@ interface IAboutUsMembersProps {
   course: string;
   description: string;
   skills: string[];
+  instaName: string;
+  url: string;
 }
 
 export default function AboutUsMembers({
@@ -21,6 +26,8 @@ export default function AboutUsMembers({
   course,
   description,
   skills,
+  instaName,
+  url
 }: IAboutUsMembersProps) {
   const id = name;
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +44,10 @@ export default function AboutUsMembers({
                 {/* Text on Hover */}
                 <div className="absolute hidden group-hover:block top-24 mx-10">
                   {skills.map((skill) => (
-                    <h3 key={skill} className="text-xl font-extrabold text-white">
+                    <h3
+                      key={skill}
+                      className="text-xl font-extrabold text-white"
+                    >
                       {skill}
                     </h3>
                   ))}
@@ -124,13 +134,23 @@ export default function AboutUsMembers({
               <p>{description}</p>
             </div>
           </div>
-          <label
-            onClick={() => setIsOpen((value) => !value)}
-            htmlFor={`tw-modal-${id}`}
-            className="cursor-pointer mt-4 inline-block rounded-md bg-red-500 px-4 py-2 text-white"
-          >
-            Fechar
-          </label>
+          <div className="flex items-center justify-between">
+            <label
+              onClick={() => setIsOpen((value) => !value)}
+              htmlFor={`tw-modal-${id}`}
+              className="cursor-pointer mt-4 inline-block rounded-md bg-red-500 px-4 py-2 text-white"
+            >
+              Fechar
+            </label>
+            <div className="group">
+                <div className="flex items-center gap-2 group-hover:text-primaryColor">
+                  <Link className="flex items-center mt-5" target="_blank" href={url}>
+                    <Instagram />
+                    <b>{instaName}</b>
+                  </Link>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ export default function CardsHelpMobile() {
                                 htmlFor={`products-checkbox1`}
                                 className="flex items-center font-bold tracking-[1px] px-4 h-[50px] text-[11px] w-full cursor-pointer"
                             >
-                                Adote virtualmente: flexibilidade que salva.
+                                Adote virtualmente:flexibilidade que salva
                             </label>
                             
                             <div className="absolute top-0 mt-4 right-[10px] transform duration-200">

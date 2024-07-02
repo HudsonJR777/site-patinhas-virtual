@@ -1,3 +1,5 @@
+import { url } from "inspector"
+
 export const skillsMembers = [
 
 
@@ -12,6 +14,8 @@ export const skillsMembers = [
             "Desenvolvedor",
 
         ],
+        instaName : "@hudsonjrx",
+        url: "https://www.instagram.com/hudsonjrx?igsh=a2l1dmkzbzZ3M2Q5",
     },
     {
         name : "Tiago Secundo Santos",
@@ -22,7 +26,9 @@ export const skillsMembers = [
         description: "O meu trabalho como Lider, em questão foi de grande importância para compreender e aprender a lidar com diferentes tipos de opiniões e pessoas que pensam de forma divergente. Sem contar a experiência de ser um administrador/gestor em um projeto social onde pude conhecer mais da causa que nosso grupo optou por abordar.",
         skills: [
             "Lider",
-        ]
+        ],
+        instaName : "@tiago_secundo",
+        url: "https://www.instagram.com/tiago_secundo?igsh=M3I4OTcwM3lmM2N2",
     },
     {
         name : "Luiz Guilherme Pires",
@@ -33,7 +39,9 @@ export const skillsMembers = [
         description: "Durante a disciplina de Administração, atuei como Designer principal em um projeto de criação de um site, identidade visual e estratégias de social media. Utilizei Photoshop, Illustrator e InDesign para desenvolver o logotipo, materiais gráficos e garantir a coerência visual. Focando em design responsivo e usabilidade, criei um site intuitivo e uma estratégia de redes sociais eficaz. Essa experiência aprimorou minhas habilidades em planejamento, colaboração e adaptação, preparando-me para futuros desafios profissionais.",
         skills: [
             "Designer"
-        ]
+        ],
+        instaName : "@luizguio",
+        url: "https://www.instagram.com/ramondinopro?igsh=MXM1empqN2ZwNm1scQ%3D%3D",
     },
      {
          name : "Riquelme Moreira Campos",
@@ -46,7 +54,9 @@ export const skillsMembers = [
             "Analista de midias sociais;",
             "Analista de marketing;",
             "Analista de RH"
-         ]
+         ],
+         instaName : "@rick_campos",
+         url: "https://www.instagram.com/rick_camposs_?igsh=NDNubHJheGtjenM%3D",
     },
     {
         name : "Nádson Nascimento Santos ",
@@ -57,7 +67,9 @@ export const skillsMembers = [
         description: "Durante meu trabalho de faculdade como Copywriter, aprendi a arte de criar mensagens persuasivas e cativantes. Explorei técnicas para captar a atenção do público-alvo, adaptando linguagem e tom conforme necessário. A experiência me ensinou a escrever conteúdos que não apenas informam, mas também engajam e motivam a ação, preparando-me para desafios futuros na área de comunicação e marketing.",
         skills : [
             "Copywriter"
-        ]
+        ],
+        instaName : "@nadson_nsantos",
+        url: "https://www.instagram.com/nadson_nsantos?igsh=NDI4Z3huZGxoYm1p",
     },
     {
         name : "Italo Tadeu Pereira Almeida",
@@ -68,7 +80,9 @@ export const skillsMembers = [
         description: "Durante meu trabalho de faculdade como Analista de Dados, desenvolvi habilidades em coleta, análise e visualização de dados. Utilizei ferramentas como Python e Excel para transformar dados brutos em insights valiosos. Aprendi a identificar padrões e tendências, e a comunicar resultados de forma clara e impactante. Essa experiência me preparou para enfrentar desafios complexos e tomar decisões informadas baseadas em dados.",
         skills : [
             "Analista de Dados"
-        ]
+        ],
+        instaName : "@italo",
+        url: "https://www.instagram.com/efedexisigualaitaloxismaisb?igsh=NGNmMnk5eTl2NmVo",
     },
     {
         name : "Luiz Otávio Gonçalves Ribeiro",
@@ -79,6 +93,9 @@ export const skillsMembers = [
         description: "Durante meu trabalho de faculdade como Secretário Geral, desenvolvi habilidades em gestão administrativa e organização de eventos. Fui responsável por coordenar reuniões, elaborar atas e gerenciar comunicações internas. Essa experiência me ensinou a lidar com múltiplas tarefas, a manter a precisão nos registros e a facilitar a colaboração eficaz entre membros da equipe. A prática me preparou para enfrentar desafios administrativos e melhorar a eficiência organizacional.",
         skills : [
             "Secretário Geral"
-        ]
+        ],
+        instaName : "@luiz_otaviogr",
+        url: "https://www.instagram.com/luiz_otaviogr?igsh=MWVtMmM5NGhndjMzcQ%3D%3D",
     }
 ]
+ 

@@ -1,7 +1,8 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Instagram } from "lucide-react";
 import Image from "next/image";
 import logo from "../assets/logo.svg";
 import { useId } from "react";
+import Link from "next/link";
 
 interface IAboutUsMembersMobileProps {
   urlImage: string;
@@ -11,6 +12,8 @@ interface IAboutUsMembersMobileProps {
   course: string;
   description: string;
   skills: string[];
+  instaName: string;
+  url: string;
 }
 
 export default function AboutUsMembersMobile({
@@ -21,6 +24,8 @@ export default function AboutUsMembersMobile({
   course,
   description,
   skills,
+  instaName,
+  url,
 }: IAboutUsMembersMobileProps) {
   const id = useId();
   return (
@@ -41,10 +46,14 @@ export default function AboutUsMembersMobile({
               </div>
               <div className="flex flex-col gap-4 relative w-full">
                 <div className="flex flex-col gap-2 py-4">
-                  <h4 className="text-lg font-bold text-primaryColor">{name}</h4>
-                  <h5 className="text-sm font-bold text-primaryColor flex gap-2 flex-col">{
-                    skills.map(item => <span key={item} >{item}</span>)
-                    }</h5>
+                  <h4 className="text-lg font-bold text-primaryColor">
+                    {name}
+                  </h4>
+                  <h5 className="text-sm font-bold text-primaryColor flex gap-2 flex-col">
+                    {skills.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </h5>
                 </div>
                 <div className="flex items-end justify-end  bottom-0 right-0 mb-4 mr-4">
                   <label
@@ -111,12 +120,22 @@ export default function AboutUsMembersMobile({
                   </div>
                 </div>
               </div>
-              <label
-                htmlFor={`tw-modal-${id}`}
-                className="cursor-pointer mt-4 inline-block rounded-md bg-red-500 px-4 py-2 text-white"
-              >
-                Fechar
-              </label>
+              <div className="flex items-center justify-between">
+                <label
+                  htmlFor={`tw-modal-${id}`}
+                  className="cursor-pointer mt-4 inline-block rounded-md bg-red-500 px-4 py-2 text-white"
+                >
+                  Fechar
+                </label>
+                <div className="group">
+                <div className="flex items-center gap-2 group-hover:text-primaryColor">
+                  <Link className="flex items-center mt-5" target="_blank" href={url}>
+                    <Instagram />
+                    <b>{instaName}</b>
+                  </Link>
+                </div>
+            </div>
+              </div>
             </div>
           </div>
         </div>

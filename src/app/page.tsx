@@ -8,7 +8,7 @@ import AboutUsMembers from "@/components/aboutUs/AboutUsMembers/aboutUsMembers";
 import Hero from "@/components/hero";
 import NavBar from "@/components/menu";
 
-import CarroselAboutUs from "@/components/aboutUs/carroselAboutUs";
+
 import Login from "@/components/login";
 import RegistrationPeople from "@/components/registration/registrationPeople";
 import { Accessibility } from "lucide-react";
@@ -58,8 +58,10 @@ export default function Home() {
           <div className="hidden lg:flex flex-col relative gap-4 container justify-center  mt-[110px]">
             <div className="flex items-center justify-center flex-col py-8 ">
               <h1 className={h1Style}>Sobre Nós</h1>
-              <p className="font-normal xl2:font-medium xl4:font-semibold xl4:text-[20px]">
-                Entenda sobre a adoção virtual e como ajudar mesmo de longe.
+              <p className="font-normal text-center xl2:font-medium xl4:font-semibold xl4:text-[20px]">
+                A Patinha Virtual é uma iniciativa de estudantes universitários que combina tecnologia e
+                compaixão para criar uma plataforma de apadrinhamento virtual de cães em abrigos. 
+                Este projeto vai além do contexto acadêmico, sendo uma missão inspiradora para fazer a diferença no mundo. Um latido de cada vez!
               </p>
             </div>
             <div className="flex flex-wrap relative gap-4 justify-center">
@@ -74,6 +76,8 @@ export default function Home() {
                     name={item.name}
                     skills={item.skills}
                     key={item.name}
+                    instaName={item.instaName}
+                    url={item.url}
                   />
                 );
               })}
@@ -81,10 +85,12 @@ export default function Home() {
           </div>
 
           <div className="flex lg:hidden flex-col gap-4">
-            <div className="flex items-center justify-center flex-col py-8 ">
+            <div className="flex items-center justify-center flex-col py-8 px-4">
               <h1 className={h1Style}>Sobre Nós</h1>
-              <p className="font-normal xl2:font-medium xl4:font-semibold xl4:text-[20px]">
-                Entenda sobre a adoção virtual e como ajudar mesmo de longe.
+              <p className="font-normal text-center xl2:font-medium xl4:font-semibold xl4:text-[20px]">
+                A Patinha Virtual é uma iniciativa de estudantes universitários que combina tecnologia 
+                e compaixão para criar uma plataforma de apadrinhamento virtual de cães em abrigos.
+                Este projeto vai além do contexto acadêmico, sendo uma missão inspiradora para fazer a diferença no mundo. Um latido de cada vez!
               </p>
             </div>
 
@@ -100,6 +106,8 @@ export default function Home() {
                     name={item.name}
                     skills={item.skills}
                     key={item.name}
+                    instaName={item.instaName}
+                    url={item.url}
                   />
                 );
               })}
