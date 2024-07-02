@@ -80,26 +80,33 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex lg:hidden relative gap-4 container flex-col">
-            {skillsMembers.map((item) => {
-              return (
-                <AboutUsMembersMobile
-                  age={item.age}
-                  urlImage={item.urlImage}
-                  city={item.city}
-                  course={item.course}
-                  description={item.description}
-                  name={item.name}
-                  skills={item.skills}
-                  key={item.name}
-                />
-              );
-            })}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center justify-center flex-col py-8 ">
+              <h1 className={h1Style}>Sobre Nós</h1>
+              <p className="font-normal xl2:font-medium xl4:font-semibold xl4:text-[20px]">
+                Entenda sobre a adoção virtual e como ajudar mesmo de longe.
+              </p>
+            </div>
+
+            <div className="flex lg:hidden relative gap-4 container flex-col">
+              {skillsMembers.map((item) => {
+                return (
+                  <AboutUsMembersMobile
+                    age={item.age}
+                    urlImage={item.urlImage}
+                    city={item.city}
+                    course={item.course}
+                    description={item.description}
+                    name={item.name}
+                    skills={item.skills}
+                    key={item.name}
+                  />
+                );
+              })}
+            </div>
           </div>
 
           {/* <AboutUsMobile  />   */}
-
-          
         </div>
       </div>
       {/* <div
@@ -111,7 +118,6 @@ export default function Home() {
               <RegistrationPeople />
             </div>
           </div> */}
-  
     </main>
   );
 }

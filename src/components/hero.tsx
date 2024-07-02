@@ -6,7 +6,7 @@ import CardsHelp from "./cardsHelp";
 
 export default function Hero() {
   return (
-    <div className="relative z-0 mt-[80px]">
+    <div className="relative z-0 mt-[49px] md:mt-[50px]">
       <div
         style={{ backgroundImage: `url(${bgHero.src}) ` }}
         className="bg-cover bg-center w-full h-[580px] pt-8"

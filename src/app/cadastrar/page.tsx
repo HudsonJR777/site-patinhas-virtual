@@ -9,7 +9,7 @@ export default function CadastroPage(){
       <NavBar />
         <div
         //  style={{ backgroundImage: `url(${ImgBg.src}) ` }}
-        className="bg-cover bg-center w-full  bg-no-repeat bg-secondaryColor relative mt-[110px] "
+        className="pt-[80px] bg-cover bg-center w-full  bg-no-repeat bg-secondaryColor relative mt-[49px] md:mt-[80px]"
       >
         <Image src={ImgBg} alt="cadastro" className="max-lg:hidden" />
         <div className="container lg:absolute top-0 right-0">

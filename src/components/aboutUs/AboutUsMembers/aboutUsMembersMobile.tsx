@@ -24,30 +24,32 @@ export default function AboutUsMembersMobile({
 }: IAboutUsMembersMobileProps) {
   const id = useId();
   return (
-    <div className="w-full max-w-full overflow-x-hidden my-4 px-4">
+    <div className="w-full overflow-x-hidden">
       <div className="w-full">
-        <div className="relative flex flex-col items-center justify-center overflow-hidden py-6 sm:py-12 ">
+        <div className="relative flex flex-col items-center justify-center overflow-hidden  ">
           {/* Modal trigger */}
           <div className="bg-[#ffb302] rounded-md w-full flex mx-auto z-10 max-w-md">
-            <div className="rounded-lg flex gap-4 p-4 w-full">
+            <div className="rounded-lg flex gap-4  w-full">
               <div className="flex-shrink-0">
                 <Image
                   src={urlImage}
                   width={150}
                   height={150}
                   alt="Hudson Xavier"
-                  className="w-[150px] h-[150px] lg:w-[200px] bg-no-repeat object-contain"
+                  className="w-[90px] h-full lg:w-[200px] bg-no-repeat object-cover"
                 />
               </div>
               <div className="flex flex-col gap-4 relative w-full">
-                <div className="flex flex-col gap-2">
-                  <h4 className="text-lg font-bold">{name}</h4>
-                  <h5 className="text-sm font-bold">{skills}</h5>
+                <div className="flex flex-col gap-2 py-4">
+                  <h4 className="text-lg font-bold text-primaryColor">{name}</h4>
+                  <h5 className="text-sm font-bold text-primaryColor flex gap-2 flex-col">{
+                    skills.map(item => <span key={item} >{item}</span>)
+                    }</h5>
                 </div>
-                <div className="flex items-end justify-end absolute bottom-0 right-0 mb-4 mr-4">
+                <div className="flex items-end justify-end  bottom-0 right-0 mb-4 mr-4">
                   <label
                     htmlFor={`tw-modal-${id}`}
-                    className="rounded-md flex items-center justify-center text-gray-50 font-medium text-xl"
+                    className="rounded-md flex items-center justify-center text-primaryColor font-medium text-xl"
                   >
                     <div className="flex items-center justify-center">
                       Saiba mais

@@ -20,10 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#4a128c] overflow-x-hidden text-zinc-50">{children}</body>
       <footer className="bg-primaryDarkeColor flex justify-center py-8 flex-col items-center gap-4 mt-10">
-        <p className="text-white" >
-          Feito com ❤️ pela <b>Patinha virtual 🐾</b> | Todos os direitos
-          reservados - 2024
-        </p>
+        <div className="text-white flex flex-wrap gap-3 justify-center" >
+          <span>Feito com ❤️ pela <b>Patinha virtual 🐾</b> </span>
+          <span>Todos os direitos reservados - 2024</span>
+        </div>
         <Link target="_blank" className="text-white flex gap-4" href="https://www.instagram.com/patinha_virtual/"> <Instagram /> <span>|</span> Siga no instagram </Link>
       </footer>
     </html>
